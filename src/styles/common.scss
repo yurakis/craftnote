@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+header,
+footer {
+  padding-left: $indent;
+  padding-right: $indent;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  height: $header-height;
+}
+
+footer {
+  font-size: 14px;
+  height: $footer-height;
+  margin-top: -$footer-height;
+}
+
+main {
+  min-height: calc(100vh - #{$header-height + $footer-height});
+  margin-bottom: $footer-height;
+  padding: $indent;
+
+  &::after {
+    height: $footer-height;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

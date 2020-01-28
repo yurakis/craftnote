@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+  <mat-form-field>
+    <input matInput formControlName="email" placeholder="Email" type="text" autofocus>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput formControlName="password" placeholder="Password" type="password">
+  </mat-form-field>
+  <mat-form-field *ngIf="isSignUp">
+    <input matInput formControlName="repeatPassword" placeholder="Repeat password" type="password">
+  </mat-form-field>
+
+  <div class="form-footer">
+    <div>
+      {{formFooterData.questionText}}
+      <a [routerLink]="formFooterData.linkPath">{{formFooterData.linkLabel}}</a>
+    </div>
+    <button mat-flat-button color="primary" [disabled]="form.invalid">{{formFooterData.primaryButtonText}}</button>
+  </div>
+</form>
