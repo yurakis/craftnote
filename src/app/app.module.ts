@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { FooterComponent, HeaderComponent } from './core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent, HeaderComponent } from './_core';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { FooterComponent, HeaderComponent } from './core';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

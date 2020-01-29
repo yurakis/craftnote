@@ -1,19 +1,31 @@
 <form [formGroup]="form">
+  <h1>{{formMetadata.primaryButtonText}}</h1>
+
   <mat-form-field>
-    <input matInput formControlName="email" placeholder="Email" type="text" autofocus>
+    <input matInput cnInputAutofocus formControlName="email" placeholder="Email" type="text">
+    <mat-error *ngIf="form.get('email').hasError('validation')">
+      {{form.get('email').getError('validation')}}
+    </mat-error>
   </mat-form-field>
   <mat-form-field>
     <input matInput formControlName="password" placeholder="Password" type="password">
+    <mat-hint *ngIf="isSignUp">At least 8 characters, uppercase letters, lowercase letters and numbers.</mat-hint>
+    <mat-error *ngIf="form.get('password').hasError('validation')">
+      {{form.get('password').getError('validation')}}
+    </mat-error>
   </mat-form-field>
   <mat-form-field *ngIf="isSignUp">
     <input matInput formControlName="repeatPassword" placeholder="Repeat password" type="password">
+    <mat-error *ngIf="form.get('repeatPassword').hasError('validation')">
+      {{form.get('repeatPassword').getError('validation')}}
+    </mat-error>
   </mat-form-field>
 
   <div class="form-footer">
     <div>
-      {{formFooterData.questionText}}
-      <a [routerLink]="formFooterData.linkPath">{{formFooterData.linkLabel}}</a>
+      {{formMetadata.questionText}}
+      <a [routerLink]="formMetadata.linkPath">{{formMetadata.linkLabel}}</a>
     </div>
-    <button mat-flat-button color="primary" [disabled]="form.invalid">{{formFooterData.primaryButtonText}}</button>
+    <button mat-flat-button color="primary" [disabled]="form.invalid">{{formMetadata.primaryButtonText}}</button>
   </div>
 </form>

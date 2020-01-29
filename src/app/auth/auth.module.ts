@@ -5,9 +5,13 @@ import { MatButtonModule, MatInputModule } from '@angular/material';
 
 import { AuthRoutingModule } from './auth-routing.module';
 import { AuthComponent } from './auth/auth.component';
+import { InputAutofocusDirective } from './input-autofocus.directive';
 
 @NgModule({
-  declarations: [AuthComponent],
+  declarations: [
+    AuthComponent,
+    InputAutofocusDirective
+  ],
   imports: [
     CommonModule,
     AuthRoutingModule,
