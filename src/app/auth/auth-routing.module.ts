@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-import { AuthComponent } from './auth/auth.component';
+import { AuthFormComponent } from './auth-form/auth-form.component';
+import { AuthType } from './auth-type.enum';
 
 const routes: Routes = [
   {
-    path: 'sign-in',
-    component: AuthComponent
+    path: AuthType.SignIn,
+    component: AuthFormComponent
   },
   {
-    path: 'sign-up',
-    component: AuthComponent
+    path: AuthType.SignUp,
+    component: AuthFormComponent
   }
 ];
 

@@ -27,16 +27,6 @@ footer {
   margin-top: -$footer-height;
 }
 
-main {
-  min-height: calc(100vh - #{$header-height + $footer-height});
-  margin-bottom: $footer-height;
-  padding: $indent;
-
-  &::after {
-    height: $footer-height;
-  }
-}
-
 * {
   box-sizing: border-box;
 }

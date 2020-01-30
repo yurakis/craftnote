@@ -1,23 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule, MatInputModule } from '@angular/material';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
+import { SharedModule } from '../_shared/shared.module';
 import { AuthRoutingModule } from './auth-routing.module';
-import { AuthComponent } from './auth/auth.component';
-import { InputAutofocusDirective } from './input-autofocus.directive';
+import { AuthFormComponent } from './auth-form/auth-form.component';
+import { AuthService } from './auth.service';
 
 @NgModule({
-  declarations: [
-    AuthComponent,
-    InputAutofocusDirective
-  ],
+  declarations: [AuthFormComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatButtonModule
-  ]
+    AngularFireAuthModule,
+    SharedModule
+  ],
+  providers: [AuthService]
 })
 export class AuthModule {}

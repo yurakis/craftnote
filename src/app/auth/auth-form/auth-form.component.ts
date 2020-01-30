@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 import { IsAliveComponent } from '../../_core';
+import { AuthType } from '../auth-type.enum';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'cn-sign-in',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss']
+  templateUrl: './auth-form.component.html',
+  styleUrls: ['./auth-form.component.scss']
 })
-export class AuthComponent extends IsAliveComponent implements OnInit {
+export class AuthFormComponent extends IsAliveComponent implements OnInit {
   form: FormGroup;
   isSignUp: boolean;
   formMetadata: {
@@ -18,24 +20,39 @@ export class AuthComponent extends IsAliveComponent implements OnInit {
     linkLabel: string;
     primaryButtonText: string;
   };
+  isLoading = false;
   private readonly emailRegExp = /^[\w.-]+@[a-z0-9-]+\.[a-z]{2,}$/i;
   private readonly passwordRegExp = /^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).{8,}$/;
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private changeDetector: ChangeDetectorRef,
+    private authService: AuthService
   ) {
     super();
   }
 
   ngOnInit() {
-    this.isSignUp = this.activatedRoute.snapshot.url[0].path === 'sign-up';
+    this.isSignUp = this.activatedRoute.snapshot.url[0].path === AuthType.SignUp;
     this.form = this.formBuilder.group({
       email: [null, [Validators.required, this.generateValidator('email address', this.emailRegExp)]],
       password: [null, [Validators.required, this.generateValidator('password', this.passwordRegExp)]],
     });
     this.setUpRepeatEmailFormControl();
     this.setFormFooterData();
+  }
+
+  submit() {
+    const {email, password} = this.form.value;
+
+    this.isLoading = true;
+    this.authService
+      .authenticate(email, password, this.isSignUp)
+      .finally(() => {
+        this.isLoading = false;
+        this.changeDetector.markForCheck();
+      });
   }
 
   private setFormFooterData() {

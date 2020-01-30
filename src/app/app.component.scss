@@ -1,0 +1,11 @@
+@import '../styles/variables.scss';
+
+main {
+  min-height: calc(100vh - #{$header-height + $footer-height});
+  margin-bottom: $footer-height;
+  padding: 0 $indent;
+
+  &::after {
+    height: $footer-height;
+  }
+}

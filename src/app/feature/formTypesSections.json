@@ -1,0 +1,799 @@
+{
+  "SectionsFormTypes": [
+    {
+      "SectionId": 1,
+      "SectionName": "Cover Page",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        7,
+        2,
+        6,
+        4,
+        11,
+        13,
+        16,
+        26
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 2,
+      "SectionName": "Consolidated Balance Sheets",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        6,
+        7,
+        4,
+        2,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 3,
+      "SectionName": "Consolidated Statements of Operations",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7,
+        2,
+        6,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 4,
+      "SectionName": "Consolidated Statements of Comprehensive Income",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        2,
+        6,
+        4,
+        7,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 5,
+      "SectionName": "Consolidated Statements of Operations and Comprehensive Income",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        7,
+        4,
+        2,
+        6,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 6,
+      "SectionName": "Consolidated Statements of Shareholders Equity",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        2,
+        6,
+        4,
+        7,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 7,
+      "SectionName": "Consolidated Statements of Cash Flow",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        6,
+        4,
+        7,
+        2,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 8,
+      "SectionName": "Notes to Financial Statements",
+      "IsShared": true,
+      "SharedName": "Notes to Financial Statements",
+      "SharedOrder": 4,
+      "FormTypeIds": [
+        13,
+        7,
+        6,
+        16,
+        10,
+        4,
+        24,
+        11,
+        25,
+        5,
+        31,
+        19,
+        39,
+        28,
+        2,
+        8,
+        22,
+        34,
+        3,
+        17,
+        23,
+        14,
+        26,
+        20,
+        15,
+        1,
+        29,
+        9,
+        21,
+        12,
+        18
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 9,
+      "SectionName": "Accounting Policies",
+      "IsShared": true,
+      "SharedName": "Accounting Policies",
+      "SharedOrder": 5,
+      "FormTypeIds": [
+        31,
+        8,
+        14,
+        20,
+        34,
+        11,
+        17,
+        23,
+        22,
+        6,
+        29,
+        12,
+        18,
+        26,
+        3,
+        15,
+        9,
+        4,
+        10,
+        24,
+        7,
+        1,
+        21,
+        27,
+        2,
+        16,
+        28,
+        13,
+        5,
+        19,
+        25,
+        39
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 10,
+      "SectionName": "Report of Independent Registered Public Accounting Firm",
+      "IsShared": true,
+      "SharedName": "Report of Independent Registered Public Accounting Firm",
+      "SharedOrder": 6,
+      "FormTypeIds": [
+        4,
+        7,
+        2,
+        6,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 105,
+      "SectionName": "Critical Audit Matters",
+      "IsShared": true,
+      "SharedName": "Critical Audit Matters",
+      "SharedOrder": 7,
+      "FormTypeIds": [
+        4,
+        7,
+        11,
+        16
+      ],
+      "ChildSections": [
+        {
+          "SectionId": 175,
+          "SectionName": "Income taxes - Uncertain tax positions",
+          "IsShared": false,
+          "SharedName": null,
+          "SharedOrder": 0,
+          "FormTypeIds": [
+            4
+          ],
+          "ChildSections": []
+        },
+        {
+          "SectionId": 176,
+          "SectionName": "Revenue and other income",
+          "IsShared": false,
+          "SharedName": null,
+          "SharedOrder": 0,
+          "FormTypeIds": [
+            4
+          ],
+          "ChildSections": []
+        },
+        {
+          "SectionId": 177,
+          "SectionName": "Revenue recognition - contract and percentage-of-completion",
+          "IsShared": false,
+          "SharedName": null,
+          "SharedOrder": 0,
+          "FormTypeIds": [
+            4
+          ],
+          "ChildSections": []
+        }
+      ]
+    },
+    {
+      "SectionId": 11,
+      "SectionName": "Auditor’s Report on Internal Control Over Financial Reporting",
+      "IsShared": true,
+      "SharedName": "Auditor’s Report on Internal Control Over Financial Reporting",
+      "SharedOrder": 10,
+      "FormTypeIds": [
+        2,
+        6,
+        7,
+        4,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 12,
+      "SectionName": "Item. Business",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 13,
+      "SectionName": "Item. Risk Factors",
+      "IsShared": true,
+      "SharedName": "Risk Factors",
+      "SharedOrder": 1,
+      "FormTypeIds": [
+        2,
+        6,
+        7,
+        4
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 14,
+      "SectionName": "Item. Unresolved Staff Comments",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        7,
+        4,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 15,
+      "SectionName": "Item. Properties",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 16,
+      "SectionName": "Item. Legal Proceedings",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        6,
+        7,
+        2
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 17,
+      "SectionName": "Item. Mine Safety Disclosures",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7,
+        2,
+        6,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 18,
+      "SectionName": "Item. Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 19,
+      "SectionName": "Item. Selected Financial Data",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 20,
+      "SectionName": "Item. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+      "IsShared": true,
+      "SharedName": "Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+      "SharedOrder": 2,
+      "FormTypeIds": [
+        4,
+        7,
+        2,
+        6
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 21,
+      "SectionName": "Item. Quantitative and Qualitative Disclosures About Market Risk",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        6,
+        4,
+        7,
+        2,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 22,
+      "SectionName": "Item. Financial Statements and Supplementary Data",
+      "IsShared": true,
+      "SharedName": "Financial Statements",
+      "SharedOrder": 3,
+      "FormTypeIds": [
+        7,
+        4,
+        2,
+        6
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 23,
+      "SectionName": "Item. Changes in and Disagreements With Accountants on Accounting and Financial Disclosure",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 24,
+      "SectionName": "Item. Controls and Procedures",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7,
+        2,
+        6,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 25,
+      "SectionName": "Item. Other Information",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        2,
+        6,
+        7,
+        4
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 26,
+      "SectionName": "Item. Directors, Executive Officers and Corporate Governance",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7,
+        11,
+        11,
+        13,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 27,
+      "SectionName": "Item. Executive Compensation",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 28,
+      "SectionName": "Item. Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        7,
+        4
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 29,
+      "SectionName": "Item. Certain Relationships and Related Transactions, and Director Independence",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 30,
+      "SectionName": "Item. Principal Accounting Fees and Services",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 31,
+      "SectionName": "Item. Exhibits, Financial Statement Schedules",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        6,
+        7,
+        4,
+        2,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 32,
+      "SectionName": "Item. Form 10–K Summary",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        4,
+        7
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 33,
+      "SectionName": "Item. Unregistered Sales of Equity Securities and Use of Proceeds.",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        6,
+        2
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 34,
+      "SectionName": "Item. Defaults Upon Senior Securities.",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        2,
+        6,
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 83,
+      "SectionName": "Item. Additional Information",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 84,
+      "SectionName": "Item. Audit committee financial expert ",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        13,
+        11
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 85,
+      "SectionName": "Item. Change in Registrant’s Certifying Accountant",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        13,
+        11
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 86,
+      "SectionName": "Item. Code of Ethics",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 87,
+      "SectionName": "Item. Corporate Governance",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 88,
+      "SectionName": "Item. Description of Securities Other than Equity Securities. ",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 89,
+      "SectionName": "Item. Exemptions from the Listing Standards for Audit Committees",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 90,
+      "SectionName": "Item. Financial Information ",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 91,
+      "SectionName": "Item. Financial Statements",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        11,
+        13,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 92,
+      "SectionName": "Item. Information on the Company ",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 93,
+      "SectionName": "Item. Key Information ",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 94,
+      "SectionName": "Item. Major Shareholders and Related Party Transactions",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 95,
+      "SectionName": "Item. Material Modifications to the Rights of Security Holders and Use of Proceeds",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 96,
+      "SectionName": "Item. Offer Statistics and Expected Timetable",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 97,
+      "SectionName": "Item. Operating and Financial Review and Prospects",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 98,
+      "SectionName": "Item. Purchases of Equity Securities by the Issuer and Affiliated Purchasers",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    },
+    {
+      "SectionId": 99,
+      "SectionName": "Item. The Offer and Listing",
+      "IsShared": false,
+      "SharedName": null,
+      "SharedOrder": 0,
+      "FormTypeIds": [
+        11,
+        13
+      ],
+      "ChildSections": []
+    }
+  ]
+}

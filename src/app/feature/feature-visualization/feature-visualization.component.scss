@@ -1,0 +1,7 @@
+@import '../../../styles/variables.scss';
+
+figure {
+  margin: 0 auto;
+  width: calc(100vw - #{$indent * 3});
+  height: calc(100vh - #{$indent + $header-height + $footer-height});
+}

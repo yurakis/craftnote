@@ -1,0 +1,23 @@
+<h3>New Feature</h3>
+
+<form [formGroup]="form" (submit)="matDialogRef.close(form.value)">
+  <mat-form-field>
+    <input matInput cnInputAutofocus formControlName="featureName" placeholder="Feature name" type="text">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput formControlName="importance" placeholder="Importance" type="number">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput formControlName="quantity" placeholder="Quantity" type="number">
+  </mat-form-field>
+
+  <div class="form-footer">
+    <button mat-flat-button matDialogClose type="button">Cancel</button>
+    <button mat-flat-button
+            color="primary"
+            [disabled]="form.invalid"
+            type="submit">
+      Add
+    </button>
+  </div>
+</form>
