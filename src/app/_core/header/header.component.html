@@ -1,5 +1,11 @@
 <header>
-  <a routerLink="/">
-    <img src="../../../assets/img/logo.webp" alt="logo">
-  </a>
+  <img src="../../../assets/img/logo.webp" alt="logo">
+
+  <nav>
+    <ul>
+      <li *ngFor="let link of links">
+        <a [routerLink]="link.path">{{link.label}}</a>
+      </li>
+    </ul>
+  </nav>
 </header>

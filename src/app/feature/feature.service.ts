@@ -11,6 +11,8 @@ import { Feature } from './feature.model';
 
 @Injectable()
 export class FeatureService {
+  private features: Feature[];
+
   constructor(
     private angularFirestore: AngularFirestore,
     private dialog: MatDialog,
@@ -29,7 +31,7 @@ export class FeatureService {
       .subscribe(() => this.matSnackBar.open('Feature has been added successfully', 'OK', {duration: 3000}));
   }
 
-  public appendBarChart(container: HTMLElement, features: Feature[]): void {
+  public appendBarChart(container: HTMLElement, features: Feature[] = this.features): void {
     const width = container.clientWidth;
     const height = container.clientHeight;
     const svg = d3.create('svg').attr('viewBox', [0, 0, width, height]);
@@ -52,9 +54,7 @@ export class FeatureService {
       .attr('x', (d, i) => x(i))
       .attr('y', d => y(d.quantity))
       .attr('height', d => y(0) - y(d.quantity))
-      .attr('width', x.bandwidth())
-      .attr('preserveAspectRatio', 'xMinYMin meet')
-      .attr('viewBox', `0 0 ${(width + margin.left + margin.right)} ${(height + margin.top + margin.bottom)}`);
+      .attr('width', x.bandwidth());
 
     svg.append('g').call(
       (g) => g
@@ -69,10 +69,7 @@ export class FeatureService {
         .call((innerG) => innerG.select('.domain').remove())
     );
 
-    window.setTimeout(() => {
-
-    });
-
+    this.features = features;
     container.appendChild(svg.node());
   }
 }

@@ -6,4 +6,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  public readonly links = [
+    {path: 'auth/sign-in', label: 'Sign in'},
+    {path: 'feature/visualization', label: 'Features'}
+  ];
+}

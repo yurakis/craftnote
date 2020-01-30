@@ -2,7 +2,7 @@
   <h1>{{formMetadata.primaryButtonText}}</h1>
 
   <mat-form-field>
-    <input matInput cnInputAutofocus formControlName="email" placeholder="Email" type="text">
+    <input matInput cnInputAutofocus formControlName="email" placeholder="Email" type="email">
     <mat-error *ngIf="form.get('email').hasError('validation')">
       {{form.get('email').getError('validation')}}
     </mat-error>

@@ -1,4 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
+import { fromEvent } from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 
 import { IsAliveComponent } from '../../_core';
 import { FeatureService } from '../feature.service';
@@ -21,6 +23,13 @@ export class FeatureVisualizationComponent extends IsAliveComponent implements A
       .valueChanges()
       .pipe(this.takeWhile())
       .subscribe((features) => this.featureService.appendBarChart(this.chartContainer.nativeElement, features));
+
+    fromEvent(window, 'resize')
+      .pipe(
+        this.takeWhile(),
+        debounceTime(500)
+      )
+      .subscribe(() => this.featureService.appendBarChart(this.chartContainer.nativeElement));
   }
 
   openFeatureDialog() {

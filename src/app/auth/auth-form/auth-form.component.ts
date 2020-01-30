@@ -58,7 +58,7 @@ export class AuthFormComponent extends IsAliveComponent implements OnInit {
   private setFormFooterData() {
     this.formMetadata = this.isSignUp ?
       {
-        questionText: 'Already signed up?',
+        questionText: 'Already have an account?',
         linkPath: '../sign-in',
         linkLabel: 'Sign in',
         primaryButtonText: 'Sign up'
