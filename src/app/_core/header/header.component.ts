@@ -9,6 +9,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class HeaderComponent {
   public readonly links = [
     {path: 'auth/sign-in', label: 'Sign in'},
-    {path: 'feature/visualization', label: 'Features'}
+    {path: 'features/visualization', label: 'Features'}
   ];
 }
