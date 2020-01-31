@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
@@ -9,7 +9,8 @@ import { AuthService } from '../auth.service';
 @Component({
   selector: 'cn-sign-in',
   templateUrl: './auth-form.component.html',
-  styleUrls: ['./auth-form.component.scss']
+  styleUrls: ['./auth-form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AuthFormComponent extends IsAliveComponent implements OnInit {
   form: FormGroup;
